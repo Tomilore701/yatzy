@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #2c2f33;
+}
+
+#game-container {
+    text-align: center;
+    width: 600px;
+    background-color: #4CAF50;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+#game-area {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#scorecard {
+    width: 45%;
+}
+
+#scorecard table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#scorecard td {
+    padding: 8px;
+    border: 1px solid #fff;
+    text-align: center;
+}
+
+#game-controls {
+    width: 45%;
+    text-align: center;
+}
+
+#dice-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.dice {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #333;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dice.kept {
+    background-color: #FF6347;
+}
+
+#roll-button, #end-turn-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#roll-button:hover, #end-turn-button:hover {
+    background-color: #0056b3;
+}
+
+#end-turn-button {
+    margin-left: 10px;
+}

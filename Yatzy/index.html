@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yatzy Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <header>
+            <h1>Yatzy Game</h1>
+
+        </header>
+
+        <div id="game-area">
+            <div id="player-info">
+                <div id="player-avatar">YOU</div>
+                <div id="scorecard">
+                    <h2>Scorecard</h2>
+                    <table>
+                        <tr><td>Ones</td><td id="ones">0</td></tr>
+                        <tr><td>Twos</td><td id="twos">0</td></tr>
+                        <tr><td>Threes</td><td id="threes">0</td></tr>
+                        <tr><td>Fours</td><td id="fours">0</td></tr>
+                        <tr><td>Fives</td><td id="fives">0</td></tr>
+                        <tr><td>Sixes</td><td id="sixes">0</td></tr>
+                        <tr><td>Three of a Kind</td><td id="three-of-a-kind">0</td></tr>
+                        <tr><td>Four of a Kind</td><td id="four-of-a-kind">0</td></tr>
+                        <tr><td>Full House</td><td id="full-house">0</td></tr>
+                        <tr><td>Small Straight</td><td id="small-straight">0</td></tr>
+                        <tr><td>Large Straight</td><td id="large-straight">0</td></tr>
+                        <tr><td>Chance</td><td id="chance">0</td></tr>
+                        <tr><td>Yatzy</td><td id="yatzy">0</td></tr>
+                        <tr><td>Total Score</td><td id="total-score">0</td></tr>
+                    </table>
+                </div>
+            </div>
+
+            <div id="game-controls">
+                <div id="dice-container">
+                    <div class="dice" id="dice1">1</div>
+                    <div class="dice" id="dice2">1</div>
+                    <div class="dice" id="dice3">1</div>
+                    <div class="dice" id="dice4">1</div>
+                    <div class="dice" id="dice5">1</div>
+                </div>
+                <button id="roll-button">Roll Dice</button>
+                <button id="end-turn-button" disabled>End Turn</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
